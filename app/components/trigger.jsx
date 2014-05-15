@@ -1,5 +1,6 @@
 var BallActions = require('../actions/ball_actions');
 var React       = require('react');
+var Util        = require('../lib/util');
 
 var Trigger = React.createClass({
 
@@ -17,7 +18,7 @@ var Trigger = React.createClass({
     };
 
     var velocity = {
-      x: Math.random(),
+      x: Util.randomNumberBetween(0.5, 1),
       y: 0
     };
 
