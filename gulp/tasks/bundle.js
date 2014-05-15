@@ -11,5 +11,5 @@ gulp.task('bundle', function(){
 		.bundle({debug: true})
 		.on('error', handleErrors)
 		.pipe(source('cannode.js'))
-		.pipe(gulp.dest('./bundle/assets/javascripts'))
+		.pipe(gulp.dest('./server/public/assets/javascripts'))
 });

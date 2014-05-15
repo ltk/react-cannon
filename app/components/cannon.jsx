@@ -6,7 +6,7 @@ function cannonBodyStyles() {
   return {
     width           : '250px',
     height          : '122px',
-    backgroundImage : 'url(./bundle/assets/images/cannon.jpg)'
+    backgroundImage : 'url(/assets/images/cannon.jpg)'
   };
 }
 
