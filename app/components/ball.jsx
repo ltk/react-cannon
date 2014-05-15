@@ -16,10 +16,10 @@ var Ball = React.createClass({
     var ballPosition = this.props.ball.currentPosition();
 
     return {
-      width        : '10px',
-      height       : '10px',
+      width        : '15px',
+      height       : '15px',
       background   : 'black',
-      borderRadius : '10px',
+      borderRadius : '15px',
       position     : 'absolute',
       left         : ballPosition.x + 'px',
       top          : ballPosition.y + 'px'

@@ -4,22 +4,12 @@ var Trigger = require('./trigger.jsx');
 
 function cannonBodyStyles() {
   return {
-    width      : '100px',
-    height     : '100px',
-    background : 'grey'
+    width           : '250px',
+    height          : '122px',
+    backgroundImage : 'url(./bundle/assets/images/cannon.jpg)'
   };
 }
 
-function cannonBarrelStyles() {
-  return {
-    width      : '50px',
-    height     : '15px',
-    background : 'grey',
-    position   : 'relative',
-    top        : '43px',
-    left       : '100px'
-  };
-}
 
 var Cannon = React.createClass({
 
@@ -27,7 +17,6 @@ var Cannon = React.createClass({
     console.log('Cannon', this)
     return (
       <div className="cannon" style={ cannonBodyStyles() }>
-        <div className="barrel" style={ cannonBarrelStyles() }></div>
         <Trigger />
       </div>
     );
