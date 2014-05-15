@@ -31,12 +31,12 @@ var App = React.createClass({
   },
 
   render: function() {
-    var classes = classSet({
+    var className = classSet({
       'ready': this.state.fireControlReady
     });
 
     return (
-      <div id="cannode-react-app" className={ classes }>
+      <div id="cannode-react-app" className={ className }>
         <Cannon />
         <ShootingRange balls={ this.state.allBalls } />
       </div>

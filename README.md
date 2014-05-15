@@ -7,4 +7,7 @@ A cannon. Fired via websockets. Made with React.js and using Flux application ar
 
 ## Instructions
 `npm install`
-`node server/server.js`
+
+`npm start`
+
+`open 'http://localhost:5000'`

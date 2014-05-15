@@ -17,7 +17,7 @@ function fire(position, velocity) {
 }
 
 function animateAll() {
-  for(id in _balls) {
+  for(var id in _balls) {
     var age = (Date.now() - id);
 
     if(age > 7000) {

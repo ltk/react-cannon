@@ -1,10 +1,13 @@
 {
-  "name": "Cannode",
+  "name": "React-Cannon",
   "version": "0.1.0",
   "description": "A web socket-powered cannon",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ltk/cannode.git"
+    "url": "git://github.com/ltk/react-cannon.git"
+  },
+  "scripts": {
+    "start": "node server/server.js"
   },
   "browser": {
   },
