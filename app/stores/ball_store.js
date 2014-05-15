@@ -17,7 +17,15 @@ function fire(position, velocity) {
 }
 
 function animateAll() {
-  // Someday something will be here. Like collision detection or whatnot.
+  for(id in _balls) {
+    var age = (Date.now() - id);
+
+    if(age > 7000) {
+      delete _balls[id];
+    }
+  }
+
+  // Someday something will go here. Like collision detection or whatnot.
 }
 
 var BallStore = merge(EventEmitter.prototype, {
