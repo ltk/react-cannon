@@ -1,6 +1,6 @@
 var BallActions = require('../actions/ball_actions');
+var FireControl = require('../lib/fire_control');
 var React       = require('react');
-var Util        = require('../lib/util');
 
 var Trigger = React.createClass({
 
@@ -11,18 +11,7 @@ var Trigger = React.createClass({
   },
 
   _onClick: function() {
-    console.log('trigger _onClick')
-    var position = {
-      x: 250,
-      y: 19
-    };
-
-    var velocity = {
-      x: Util.randomNumberBetween(0.7, 1.2),
-      y: 0
-    };
-
-    BallActions.fire(position, velocity);
+    FireControl.fire();
   }
 
 });

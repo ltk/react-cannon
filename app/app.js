@@ -5,7 +5,6 @@ var RootComponent          = require('./components/app.jsx');
 var React                  = require('react');
 
 var App = {
-
   container: function() {
     return document.getElementById('cannode-react-hook');
   },
